@@ -45,7 +45,7 @@ Este é um projeto full-stack que utiliza React com Next.js no frontend e Node.j
     ```
 4. Executar os migrations
    ```
-   npx prisma migrate dev --name init
+   npx prisma migrate dev --name produto
    npx prisma migrate deploy
    ```
 
