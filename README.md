@@ -38,13 +38,18 @@ Este é um projeto full-stack que utiliza React com Next.js no frontend e Node.j
     npm install
     ```
 
-3. Configure o arquivo `.env` com as variáveis de ambiente necessárias:
+3. Configure o arquivo `.env` com as variáveis de ambiente necessárias, substituindo o user e password pelas credencias que definiu no SGBD PostgreSQL:
     ```.env
     DATABASE_URL=postgresql://user:password@localhost:5432/projeto1
     PORT=3001
     ```
+4. Executar os migrations
+   ```
+   npx prisma migrate dev --name init
+   npx prisma migrate deploy
+   ```
 
-4. Inicie o servidor de desenvolvimento:
+5. Inicie o servidor de desenvolvimento:
     ```
     npm run start:dev
     ```
